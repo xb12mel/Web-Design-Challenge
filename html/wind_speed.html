@@ -3,14 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualization Dashboard</title>
+  <title>Lat v. Wind Speed</title>
  <!-- Bootstrap -->
- <link href="/css/reset.css" rel="stylesheet">
- <link href="css files/style.css" rel="stylesheet">
+ <link href="style.css" rel="stylesheet">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link href="Stu_BootstrapComponents/media_style.css" rel="stylesheet">
 
-  
+    <!--Navbar adjustments-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-black" href="index.html" >Latitude Analysis Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        </div> 
+    </nav>
 </head>
 <body>
 <div class="container content">    
@@ -27,4 +34,24 @@
                 <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
             </div>
         </div>
+
+<nav id="navbar-collapse" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Plots</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Latitude vs:</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="temp.html">Max Temp (°F)</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="wc_index.html">Wind Speed</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+        
 </body> 
